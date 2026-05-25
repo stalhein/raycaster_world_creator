@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Raycaster World Creator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menu" class="screen active">
+      <div class="panel">
+        <h1>Setup</h1>
+        <div id="size">
+          <input min="0" max="20" placeholder="W" type="number" id="width" />
+          <b>×</b>
+          <input min="0" max="20" placeholder="H" type="number" id="height" />
+        </div>
+        <button id="start">START</button>
+      </div>
+    </div>
+
+    <div id="editor" class="screen">
+      <div class="panel">
+        <h1>Editor</h1>
+        <div id="tiles"></div>
+        <div class="controls-row">
+          <div>
+            <label>Surface</label>
+            <select id="surface" autocomplete="off">
+              <option value="0" selected>Floor</option>
+              <option value="1">Walls</option>
+              <option value="2">Ceiling</option>
+            </select>
+          </div>
+          <div>
+            <label>Tile</label>
+            <select id="tile-picker" autocomplete="off">
+              <option value="-1">0</option>
+              <option value="0" selected>1</option>
+              <option value="1">2</option>
+              <option value="2">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="action-bar">
+          <button id="save">Save</button>
+          <button id="reset">Reset</button>
+          <button id="reset-all">Reset All</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

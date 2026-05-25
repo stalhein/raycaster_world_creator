@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/twhite/Projects/raycaster_world_creator/build/cmake_install.cmake",
-		"/home/twhite/Projects/raycaster_world_creator/build/_deps/sdl2-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
