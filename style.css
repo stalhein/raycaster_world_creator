@@ -173,3 +173,24 @@ button:active {
   filter: brightness(1.2);
   cursor: pointer;
 }
+
+.key {
+  text-align: center;
+}
+
+.key .row {
+  display: flex;
+  gap: 10px;
+}
+
+.key .row div {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

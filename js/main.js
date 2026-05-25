@@ -1,4 +1,6 @@
-alert(`Please note there are limitations, such as disallowing blank tiles on the floor and ceiling, which are designed to guard the programme from bugs.`);
+document.addEventListener("DOMContentLoaded", () => {
+  alert(`Please note there are limitations, such as disallowing blank tiles on the floor and ceiling, which are designed to guard the programme from bugs.`);
+});
 
 const paths = ["assets/floor3.png", "assets/wall5.png", "assets/ceiling.png"];
 
