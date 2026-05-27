@@ -13,6 +13,12 @@
           <b>×</b>
           <input min="0" max="20" placeholder="H" type="number" id="height" />
         </div>
+        <div>
+          <strong>Guidance:</strong><br>
+          <p>Choose the floor, ceiling or walls to edit. Floor and ceiling cannot be blank, and edge walls must be filled.</p>
+          <p>Place some skylights - otherwise, when viewed in-game, all will be dark.</p>
+          <p>For now, 1, 1 is set to the player spawn point, so no tile can be placed there in the wall surface.</p>
+        </div>
         <button id="start">START</button>
       </div>
     </div>
@@ -33,20 +39,22 @@
           <div>
             <label>Tile</label>
             <select id="tile-picker" autocomplete="off">
-              <option value="-1">0</option>
-              <option value="0" selected>1</option>
-              <option value="1">2</option>
-              <option value="2">3</option>
+              <option value="-1">Blank</option>
+              <option value="0" selected>Floor</option>
+              <option value="1">Wall</option>
+              <option value="2">Ceiling</option>
+              <option value="3">Skylight</option>
             </select>
           </div>
         </div>
         <div class="key">
           <p>Tile Key</p>
           <div class="row">
-            <div>0</div>
-            <div style="background-image: url('assets/floor3.png');">1</div>
-            <div style="background-image: url('assets/wall5.png');">2</div>
-            <div style="background-image: url('assets/ceiling.png');">3</div>
+            <div>Blank</div>
+            <div style="background-image: url('assets/floor3.png');">Floor</div>
+            <div style="background-image: url('assets/wall5.png');">Wall</div>
+            <div style="background-image: url('assets/ceiling1.png');">Ceiling</div>
+            <div style="background-image: url('assets/skylight.png');">Skylight</div>
           </div>
         </div>
         <div class="action-bar">

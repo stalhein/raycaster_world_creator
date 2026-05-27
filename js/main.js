@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  alert(`Please note there are limitations, such as disallowing blank tiles on the floor and ceiling, which are designed to guard the programme from bugs.`);
+  //alert(`Please note there are limitations, such as disallowing blank tiles on the floor and ceiling, which are designed to guard the programme from bugs.`);
 });
 
-const paths = ["assets/floor3.png", "assets/wall5.png", "assets/ceiling.png"];
+const paths = ["assets/floor3.png", "assets/wall5.png", "assets/ceiling1.png", "assets/skylight.png"];
 
 const defaultTiles = [0, -1, 2];
 
@@ -84,6 +84,10 @@ function changeTile(x, y) {
       return;
     }
   } else if (currentGrid != 1 && selectedTile == -1) {
+    return;
+  }
+  if (currentGrid == 1 && x == 1 && y == 1) {
+    alert("1, 1 is spawn tile! You cannot obstruct spawn.");
     return;
   }
   const item = document.getElementById(`${x}-${y}`);
